@@ -9,7 +9,6 @@
 // ----------------------------------------------------------------------------------
 
 <script>
-import Title from "@/components/Title.vue";
 import { mapState, mapActions } from "vuex";
 
 export default {

@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1>VueAPI/</h1>
+    <h1>Muzakpedia</h1>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
 <style scoped lang="scss">
 .header {
   width: 100%;
-  padding: 1%;
+  padding: 5%;
   background-color: #42b983;
 
   h1 {

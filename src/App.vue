@@ -3,7 +3,8 @@
     <Header />
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/settings">Settings</router-link>
+      <router-link to="/settings">Settings</router-link> |
+      <router-link to="/albums">Álbums</router-link>
     </div>
     <router-view />
   </div>
@@ -21,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-body {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -41,9 +42,11 @@ body {
   a {
     font-weight: bold;
     color: #2c3e50;
+    text-decoration: none;
 
     &.router-link-exact-active {
       color: #42b983;
+      text-decoration: underline;
     }
   }
 }
