@@ -4,7 +4,8 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/settings">Settings</router-link> |
-      <router-link to="/albums">Álbums</router-link>
+      <router-link to="/albums">Álbums</router-link> |
+      <router-link to="/omdb">OMDB</router-link> |
     </div>
     <router-view />
   </div>

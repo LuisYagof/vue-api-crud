@@ -19,6 +19,16 @@ const routes = [
     path: '/albums',
     name: 'Albums',
     component: () => import(/* webpackChunkName: "albums" */ '../views/LastFm.vue')
+  },
+  {
+    path: '/omdb',
+    name: 'Omdb',
+    component: () => import(/* webpackChunkName: "albums" */ '../views/OMDB.vue')
+  },
+  {
+    path: '/movie/:id',
+    name: 'Movie',
+    component: () => import(/* webpackChunkName: "albums" */ '../views/movie.vue')
   }
 ]
 
