@@ -69,11 +69,6 @@ export default {
   methods: {
     ...mapActions(["favsLoadAction", "favDeleteAction"]),
 
-    // async deleteSequence(id) {
-    //   await this.favDeleteAction(id);
-    //   await this.favsLoadAction()
-    // },
-
     async movieFetch() {
       try {
         const movieCall = await fetch(
@@ -101,21 +96,7 @@ export default {
       } catch (err) {
         console.log(err);
       }
-    },
-    // async deleteFav(id) {
-    //   const fetchOpt = {
-    //     method: "DELETE",
-    //   };
-    //   try {
-    //     const favsCall = await fetch(
-    //       `http://localhost:3000/favs/${id}`,
-    //       fetchOpt
-    //     );
-    //     this.favsFetch();
-    //   } catch (err) {
-    //     console.log(err);
-    //   }
-    // },
+    }
   },
 };
 </script>

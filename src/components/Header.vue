@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1>Moviepedia</h1>
+    <h1>🎬 Moviepedia</h1>
   </div>
 </template>
 

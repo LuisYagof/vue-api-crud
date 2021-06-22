@@ -37,7 +37,7 @@
       </div>
     </div>
 
-    <div v-else class="wrapperRes">
+    <div v-if="fetched.Error === 'Movie not found!'" class="wrapperRes">
       🥺 No results found for your search. Check your spelling for errors 🔍
     </div>
   </div>
@@ -143,12 +143,6 @@ div.omdb {
     button.true {
       background-color: grey;
     }
-  }
-
-  hr {
-    border: 1px solid lightgray;
-    width: 90%;
-    margin: 22px 0;
   }
 
   div.movieCard {

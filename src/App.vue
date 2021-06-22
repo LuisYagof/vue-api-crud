@@ -50,4 +50,10 @@ export default {
     }
   }
 }
+
+hr {
+  border: 1px solid lightgray;
+  width: 90%;
+  margin: 22px 0;
+}
 </style>

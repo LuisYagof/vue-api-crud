@@ -40,6 +40,36 @@
       "Website": "N/A",
       "Response": "True",
       "id": "tt0083658"
+    },
+    {
+      "Title": "The Get Down",
+      "Year": "2016–2017",
+      "Rated": "TV-MA",
+      "Released": "12 Aug 2016",
+      "Runtime": "52 min",
+      "Genre": "Drama, Music, Musical",
+      "Director": "N/A",
+      "Writer": "Stephen Adly Guirgis, Baz Luhrmann",
+      "Actors": "Justice Smith, Shameik Moore, Herizen F. Guardiola",
+      "Plot": "A ragtag group of teenagers run wild in the streets of the Bronx in the late 1970s.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "5 wins & 8 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjE5Mzg0NzU3OF5BMl5BanBnXkFtZTgwNDg1ODg2MTI@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.3/10"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "8.3",
+      "imdbVotes": "21,336",
+      "imdbID": "tt4592410",
+      "Type": "series",
+      "totalSeasons": "1",
+      "Response": "True",
+      "id": "tt4592410"
     }
   ]
 }
