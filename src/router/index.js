@@ -11,16 +11,6 @@ const routes = [
     component: Home
   },
   {
-    path: '/settings',
-    name: 'Settings',
-    component: () => import(/* webpackChunkName: "" */ '../views/Settings.vue')
-  },
-  {
-    path: '/albums',
-    name: 'Albums',
-    component: () => import(/* webpackChunkName: "" */ '../views/LastFm.vue')
-  },
-  {
     path: '/omdb',
     name: 'Omdb',
     component: () => import(/* webpackChunkName: "" */ '../views/OMDB.vue')

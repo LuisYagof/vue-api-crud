@@ -3,9 +3,7 @@
     <Header />
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/settings">Settings</router-link> |
-      <router-link to="/albums">Álbums</router-link> |
-      <router-link to="/omdb">OMDB</router-link> |
+      <router-link to="/omdb">Search</router-link> |
       <router-link to="/favourites">Favourites</router-link>
     </div>
     <router-view />
