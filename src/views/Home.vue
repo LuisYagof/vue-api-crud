@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <Title msg="This is your home page"/>
+    <Title msg="Welcome to Moviepedia"/>
   </div>
 </template>
 

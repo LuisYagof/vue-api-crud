@@ -25,7 +25,7 @@
     </div>
 
     <div v-else class="albumCard">
-      🥺 No results found for your search. Check your spelling for errors 🔍"
+      🥺 No results found for your search. Check your spelling for errors 🔍
     </div>
   </div>
 </template>

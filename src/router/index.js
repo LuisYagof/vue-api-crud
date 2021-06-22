@@ -13,22 +13,27 @@ const routes = [
   {
     path: '/settings',
     name: 'Settings',
-    component: () => import(/* webpackChunkName: "settings" */ '../views/Settings.vue')
+    component: () => import(/* webpackChunkName: "" */ '../views/Settings.vue')
   },
   {
     path: '/albums',
     name: 'Albums',
-    component: () => import(/* webpackChunkName: "albums" */ '../views/LastFm.vue')
+    component: () => import(/* webpackChunkName: "" */ '../views/LastFm.vue')
   },
   {
     path: '/omdb',
     name: 'Omdb',
-    component: () => import(/* webpackChunkName: "albums" */ '../views/OMDB.vue')
+    component: () => import(/* webpackChunkName: "" */ '../views/OMDB.vue')
   },
   {
     path: '/movie/:id',
     name: 'Movie',
-    component: () => import(/* webpackChunkName: "albums" */ '../views/movie.vue')
+    component: () => import(/* webpackChunkName: "" */ '../views/Movie.vue')
+  },
+  {
+    path: '/favourites',
+    name: 'Favourites',
+    component: () => import(/* webpackChunkName: "" */ '../views/Favourites.vue')
   }
 ]
 

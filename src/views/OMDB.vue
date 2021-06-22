@@ -28,16 +28,17 @@
         class="movieCard"
       >
         <h4>{{ item.Title }}</h4>
-        <img :src="item.Poster" alt="Movie Poster" v-if="item.Poster" />
+        <img :src="item.Poster" :alt="item.Title + ' - Movie Poster'" v-if="item.Poster" />
         <p v-if="item.Year">
-          <strong> Year: </strong> <small> {{ item.Year }} </small>
+          <strong> Year: </strong>
+          <small> {{ item.Year }} </small>
         </p>
 
       </div>
     </div>
 
     <div v-else class="wrapperRes">
-      🥺 No results found for your search. Check your spelling for errors 🔍"
+      🥺 No results found for your search. Check your spelling for errors 🔍
     </div>
   </div>
 </template>
@@ -47,6 +48,9 @@
 <script>
 export default {
   name: "Omdb",
+  
+  components: {},
+  
   data() {
     return {
       movie: "",
@@ -54,6 +58,7 @@ export default {
       fetched: {},
     };
   },
+  
   computed: {
     disableBtn() {
       return this.movie === "" || this.format === "" ? true : false;
@@ -62,6 +67,7 @@ export default {
       return this.movie === "" || this.format === "" ? "true" : "false";
     },
   },
+  
   methods: {
     async searchMovie() {
       try {
@@ -80,10 +86,8 @@ export default {
     },
     movieDetail(id) {
       this.$router.push(`/movie/${id}`)
-
     },
   },
-  components: {},
 };
 </script>
 

@@ -1,36 +1,80 @@
 <template>
   <div class="movieDetail">
     <h2>{{ fetched.Title }}</h2>
-    <img :src="fetched.Poster" alt="Movie Poster" v-if="fetched.Poster" />
+
+    <img
+      :src="fetched.Poster"
+      :alt="fetched.Title + ' - Movie Poster'"
+      v-if="fetched.Poster"
+    />
+
+    <p v-if="fetched.Released">
+      <strong> Released: </strong>
+      <small> {{ fetched.Released }} </small>
+    </p>
+
+    <p v-if="fetched.Director">
+      <strong> Director: </strong>
+      <small> {{ fetched.Director }} </small>
+    </p>
+
     <p v-if="fetched.Plot">
-      <strong> Plot: </strong> <small> {{ fetched.Plot }} </small>
+      <strong> Plot: </strong>
+      <small> {{ fetched.Plot }} </small>
     </p>
-    <p v-else>There is no plot.</p>
+
     <p v-if="fetched.Genre">
-      <strong> Genres: </strong> <small> {{ fetched.Genre }} </small>
+      <strong> Genres: </strong>
+      <small> {{ fetched.Genre }} </small>
     </p>
+
+    <button v-if="checkFav" @click="favDeleteAction(fetched.imdbID)">
+      Borrar
+    </button>
+    <button v-else @click="saveFav(fetched, fetched.imdbID)">Guardar</button>
   </div>
 </template>
 
 // --------------------------------------------------------
 
 <script>
+import { mapState, mapActions } from "vuex";
+
 export default {
   name: "Movie",
+
   components: {},
+
   data() {
     return {
-      id: this.$route.params.id,
       fetched: {},
     };
   },
+
   created() {
-    this.moviefetch();
+    this.movieFetch();
+    this.favsLoadAction();
   },
+
   props: {},
-  computed: {},
+
+  computed: {
+    ...mapState(["favs"]),
+
+    checkFav() {
+      return this.favs.find((el) => el.imdbID === this.fetched.imdbID);
+    },
+  },
+
   methods: {
-    async moviefetch() {
+    ...mapActions(["favsLoadAction", "favDeleteAction"]),
+
+    // async deleteSequence(id) {
+    //   await this.favDeleteAction(id);
+    //   await this.favsLoadAction()
+    // },
+
+    async movieFetch() {
       try {
         const movieCall = await fetch(
           `http://www.omdbapi.com/?i=${this.$route.params.id}&apikey=d9e992da`
@@ -41,6 +85,37 @@ export default {
         console.log(err);
       }
     },
+    async saveFav(fetched, id) {
+      const fetchOpt = {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({ ...fetched, ...{ id: id } }),
+      };
+      try {
+        const favsCall = await fetch(`http://localhost:3000/favs`, fetchOpt);
+        const parsedFav = await favsCall.json();
+        console.log(parsedFav);
+        this.favsLoadAction();
+      } catch (err) {
+        console.log(err);
+      }
+    },
+    // async deleteFav(id) {
+    //   const fetchOpt = {
+    //     method: "DELETE",
+    //   };
+    //   try {
+    //     const favsCall = await fetch(
+    //       `http://localhost:3000/favs/${id}`,
+    //       fetchOpt
+    //     );
+    //     this.favsFetch();
+    //   } catch (err) {
+    //     console.log(err);
+    //   }
+    // },
   },
 };
 </script>
@@ -48,4 +123,36 @@ export default {
 // --------------------------------------------------------
 
 <style lang='scss' scoped>
+div.movieDetail {
+  padding: 0 10px 10px 10px;
+
+  h2 {
+    margin-bottom: 22px;
+  }
+
+  img {
+    margin-bottom: 22px;
+    border-radius: 5px;
+  }
+
+  p {
+    margin-bottom: 22px;
+    text-align: justify;
+  }
+
+  button {
+    background-color: #303030;
+    color: white;
+    padding: 5px;
+    margin: 0 5px;
+    font: inherit;
+    border: none;
+    line-height: 1.5;
+
+    &:hover {
+      background-color: #404040;
+      transform: scale(1.05);
+    }
+  }
+}
 </style>

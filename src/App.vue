@@ -6,6 +6,7 @@
       <router-link to="/settings">Settings</router-link> |
       <router-link to="/albums">Álbums</router-link> |
       <router-link to="/omdb">OMDB</router-link> |
+      <router-link to="/favourites">Favourites</router-link>
     </div>
     <router-view />
   </div>
@@ -38,7 +39,7 @@ export default {
 }
 
 #nav {
-  padding: 30px;
+  padding: 30px 5px;
 
   a {
     font-weight: bold;
