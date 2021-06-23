@@ -42,34 +42,247 @@
       "id": "tt0083658"
     },
     {
-      "Title": "The Get Down",
-      "Year": "2016–2017",
+      "Title": "The Wire",
+      "Year": "2002–2008",
       "Rated": "TV-MA",
-      "Released": "12 Aug 2016",
-      "Runtime": "52 min",
-      "Genre": "Drama, Music, Musical",
+      "Released": "02 Jun 2002",
+      "Runtime": "59 min",
+      "Genre": "Crime, Drama, Thriller",
       "Director": "N/A",
-      "Writer": "Stephen Adly Guirgis, Baz Luhrmann",
-      "Actors": "Justice Smith, Shameik Moore, Herizen F. Guardiola",
-      "Plot": "A ragtag group of teenagers run wild in the streets of the Bronx in the late 1970s.",
-      "Language": "English",
-      "Country": "United States",
-      "Awards": "5 wins & 8 nominations",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMjE5Mzg0NzU3OF5BMl5BanBnXkFtZTgwNDg1ODg2MTI@._V1_SX300.jpg",
+      "Writer": "David Simon",
+      "Actors": "Dominic West, John Doman, Deirdre Lovejoy, Wendell Pierce",
+      "Plot": "The Baltimore drug scene, as seen through the eyes of drug dealers and law enforcement.",
+      "Language": "English, Greek, Mandarin, Spanish",
+      "Country": "USA",
+      "Awards": "Nominated for 2 Primetime Emmys. Another 16 wins & 52 nominations.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNTllYzFhMjAtZjExNS00MjM4LWE5YmMtOGFiZGRlOTU5YzJiXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_SX300.jpg",
       "Ratings": [
         {
           "Source": "Internet Movie Database",
-          "Value": "8.3/10"
+          "Value": "9.3/10"
         }
       ],
       "Metascore": "N/A",
-      "imdbRating": "8.3",
-      "imdbVotes": "21,336",
-      "imdbID": "tt4592410",
+      "imdbRating": "9.3",
+      "imdbVotes": "294,374",
+      "imdbID": "tt0306414",
       "Type": "series",
-      "totalSeasons": "1",
+      "totalSeasons": "5",
       "Response": "True",
-      "id": "tt4592410"
+      "id": "tt0306414"
+    },
+    {
+      "Title": "Stop Making Sense",
+      "Year": "1984",
+      "Rated": "Not Rated",
+      "Released": "16 Nov 1984",
+      "Runtime": "88 min",
+      "Genre": "Documentary, Music",
+      "Director": "Jonathan Demme",
+      "Writer": "Jonathan Demme, Talking Heads",
+      "Actors": "Bernie Worrell, Alex Weir, Steven Scales, Lynn Mabry",
+      "Plot": "An innovative concert movie for the rock group Talking Heads.",
+      "Language": "English",
+      "Country": "USA",
+      "Awards": "2 wins & 1 nomination.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjUxZmZmYzQtMzgzNy00OGVmLWE5M2ItOTA5MTZiMTk4MTY5XkEyXkFqcGdeQXVyNTI4MjkwNjA@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.6/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "100%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "89/100"
+        }
+      ],
+      "Metascore": "89",
+      "imdbRating": "8.6",
+      "imdbVotes": "13,680",
+      "imdbID": "tt0088178",
+      "Type": "movie",
+      "DVD": "N/A",
+      "BoxOffice": "$5,095,592",
+      "Production": "Arnold Stiefel Company",
+      "Website": "N/A",
+      "Response": "True",
+      "id": "tt0088178"
+    },
+    {
+      "Title": "Revolution OS",
+      "Year": "2001",
+      "Rated": "N/A",
+      "Released": "15 Feb 2002",
+      "Runtime": "85 min",
+      "Genre": "Documentary, Comedy",
+      "Director": "J.T.S. Moore",
+      "Writer": "J.T.S. Moore",
+      "Actors": "Linus Torvalds, Richard M. Stallman, Eric Raymond",
+      "Plot": "While Microsoft may be the biggest software company in the world, not every computer user is a fan of their products, or their way of doing business. While Microsoft's Windows became the most widely used operating system for personal",
+      "Language": "English, Swedish",
+      "Country": "United States",
+      "Awards": "N/A",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTgyNDU0NTIwNV5BMl5BanBnXkFtZTcwNzE4MDQyMQ@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.3/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "43%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "46/100"
+        }
+      ],
+      "Metascore": "46",
+      "imdbRating": "7.3",
+      "imdbVotes": "2,435",
+      "imdbID": "tt0308808",
+      "Type": "movie",
+      "DVD": "23 Mar 2017",
+      "BoxOffice": "$3,500",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": "tt0308808"
+    },
+    {
+      "Title": "The Great Escape",
+      "Year": "1963",
+      "Rated": "Approved",
+      "Released": "04 Jul 1963",
+      "Runtime": "172 min",
+      "Genre": "Adventure, Drama, History",
+      "Director": "John Sturges",
+      "Writer": "Paul Brickhill, James Clavell, W.R. Burnett",
+      "Actors": "Steve McQueen, James Garner, Richard Attenborough",
+      "Plot": "Allied prisoners of war plan for several hundred of their number to escape from a German camp during World War II.",
+      "Language": "English, German, French, Russian, Spanish",
+      "Country": "United States",
+      "Awards": "Nominated for 1 Oscar. 3 wins & 11 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzA2NmYxMWUtNzBlMC00MWM2LTkwNmQtYTFlZjQwODNhOWE0XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.2/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "94%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "86/100"
+        }
+      ],
+      "Metascore": "86",
+      "imdbRating": "8.2",
+      "imdbVotes": "228,852",
+      "imdbID": "tt0057115",
+      "Type": "movie",
+      "DVD": "30 Nov 2016",
+      "BoxOffice": "N/A",
+      "Production": "Mirisch Company",
+      "Website": "N/A",
+      "Response": "True",
+      "id": "tt0057115"
+    },
+    {
+      "Title": "BoJack Horseman",
+      "Year": "2014–2020",
+      "Rated": "TV-MA",
+      "Released": "22 Aug 2014",
+      "Runtime": "25 min",
+      "Genre": "Animation, Comedy, Drama",
+      "Director": "N/A",
+      "Writer": "Raphael Bob-Waksberg",
+      "Actors": "Will Arnett, Amy Sedaris, Alison Brie",
+      "Plot": "BoJack Horseman was the star of the hit television show \"Horsin' Around\" in the '80s and '90s, but now he's washed up, living in Hollywood, complaining about everything, and wearing colorful sweaters.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "Nominated for 3 Primetime Emmys. 29 wins & 42 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYWQwMDNkM2MtODU4OS00OTY3LTgwOTItNjE2Yzc0MzRkMDllXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.7/10"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "8.7",
+      "imdbVotes": "120,268",
+      "imdbID": "tt3398228",
+      "Type": "series",
+      "totalSeasons": "6",
+      "Response": "True",
+      "id": "tt3398228"
+    },
+    {
+      "Title": "The Deuce",
+      "Year": "2017–2019",
+      "Rated": "TV-MA",
+      "Released": "25 Aug 2017",
+      "Runtime": "60 min",
+      "Genre": "Drama",
+      "Director": "N/A",
+      "Writer": "George Pelecanos, David Simon",
+      "Actors": "James Franco, Maggie Gyllenhaal, Lawrence Gilliard Jr.",
+      "Plot": "A look at life in New York City during the 1970s and '80s when porn and prostitution were rampant in Manhattan.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "17 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOWEyM2U1MjctZTUzYy00MTMyLTkyNTgtNjQxNTc2ODk2OTJkXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.1/10"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "8.1",
+      "imdbVotes": "25,667",
+      "imdbID": "tt4998350",
+      "Type": "series",
+      "totalSeasons": "3",
+      "Response": "True",
+      "id": "tt4998350"
+    },
+    {
+      "Title": "Silicon Valley",
+      "Year": "2014–2019",
+      "Rated": "TV-MA",
+      "Released": "06 Apr 2014",
+      "Runtime": "28 min",
+      "Genre": "Comedy",
+      "Director": "N/A",
+      "Writer": "John Altschuler, Mike Judge, Dave Krinsky",
+      "Actors": "Thomas Middleditch, Josh Brener, Martin Starr, Kumail Nanjiani",
+      "Plot": "Follows the struggle of Richard Hendricks, a Silicon Valley engineer trying to build his own company called Pied Piper.",
+      "Language": "English",
+      "Country": "USA",
+      "Awards": "Won 2 Primetime Emmys. Another 13 wins & 94 nominations.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BM2Q5YjNjZWMtYThmYy00N2ZjLWE2NDctNmZjMmZjYWE2NjEwXkEyXkFqcGdeQXVyMTAzMDM4MjM0._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.5/10"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "8.5",
+      "imdbVotes": "130,685",
+      "imdbID": "tt2575988",
+      "Type": "series",
+      "totalSeasons": "6",
+      "Response": "True",
+      "id": "tt2575988"
     }
   ]
 }

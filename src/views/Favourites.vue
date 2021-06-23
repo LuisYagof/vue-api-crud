@@ -1,7 +1,10 @@
 <template>
-  <Fragment>
-    <FilterModal v-if="modalFlag" />
-
+  <div>
+    <FilterModal
+      @close="handleFilters"
+      :flag="modalFlag"
+      @filterProp="applyFilters"
+    />
     <div class="Favourites">
       <div class="filterBox">
         <p>Filters</p>
@@ -34,14 +37,13 @@
         </h3>
       </div>
     </div>
-  </Fragment>
+  </div>
 </template>
 
 // --------------------------------------------------------
 
 <script>
 import { mapState, mapActions } from "vuex";
-import { Fragment } from "vue-fragment";
 import FilterModal from "../components/FilterModal.vue";
 
 export default {
@@ -49,7 +51,6 @@ export default {
 
   components: {
     FilterModal,
-    Fragment
   },
 
   data() {
@@ -79,6 +80,20 @@ export default {
     handleFilters() {
       this.modalFlag = !this.modalFlag;
     },
+
+    applyFilters(format, genre) {
+      if (format === "" && genre === "") {
+        return;
+      } else if (format === "" && genre !== "") {
+        this.filtered = this.favs.filter((e) => e.Genre.includes(genre));
+      } else if (format !== "" && genre === "") {
+        this.filtered = this.favs.filter((e) => e.Type == format);
+      } else {
+        this.filtered = this.favs.filter(
+          (e) => e.Type == format && e.Genre.includes(genre)
+        );
+      }
+    },
   },
 };
 </script>
@@ -87,6 +102,7 @@ export default {
 
 <style lang='scss' scoped>
 div.Favourites {
+  padding: 30px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;

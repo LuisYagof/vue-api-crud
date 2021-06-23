@@ -105,7 +105,7 @@ export default {
 
 <style lang='scss' scoped>
 div.movieDetail {
-  padding: 0 10px 10px 10px;
+  padding: 30px 10px 100px 10px;
 
   h2 {
     margin-bottom: 22px;

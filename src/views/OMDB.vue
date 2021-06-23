@@ -3,9 +3,9 @@
     <h2>Movie searcher</h2>
 
     <div class="form">
-      <input v-model="movie" type="text" placeholder="Movie name" />
+      <input v-model="movie" type="text" placeholder="Movie or TV show name" />
       <select v-model="format" name="format" defaultValue="">
-        <option value="" disabled hidden>Format</option>
+        <option value="" disabled hidden>Movie or TV show?</option>
         <option value="movie">Movie</option>
         <option value="series">Series</option>
       </select>
@@ -28,12 +28,15 @@
         class="movieCard"
       >
         <h4>{{ item.Title }}</h4>
-        <img :src="item.Poster" :alt="item.Title + ' - Movie Poster'" v-if="item.Poster" />
+        <img
+          :src="item.Poster"
+          :alt="item.Title + ' - Movie Poster'"
+          v-if="item.Poster"
+        />
         <p v-if="item.Year">
           <strong> Year: </strong>
           <small> {{ item.Year }} </small>
         </p>
-
       </div>
     </div>
 
@@ -48,9 +51,9 @@
 <script>
 export default {
   name: "Omdb",
-  
+
   components: {},
-  
+
   data() {
     return {
       movie: "",
@@ -58,7 +61,7 @@ export default {
       fetched: {},
     };
   },
-  
+
   computed: {
     disableBtn() {
       return this.movie === "" || this.format === "" ? true : false;
@@ -67,7 +70,7 @@ export default {
       return this.movie === "" || this.format === "" ? "true" : "false";
     },
   },
-  
+
   methods: {
     async searchMovie() {
       try {
@@ -85,7 +88,7 @@ export default {
       }
     },
     movieDetail(id) {
-      this.$router.push(`/movie/${id}`)
+      this.$router.push(`/movie/${id}`);
     },
   },
 };
@@ -95,6 +98,7 @@ export default {
 
 <style lang='scss' scoped>
 div.omdb {
+  padding: 30px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -2,9 +2,15 @@
   <div id="app">
     <Header />
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/omdb">Search</router-link> |
-      <router-link to="/favourites">Favourites</router-link>
+      <div>
+        <router-link to="/"><img src="./assets/Home.svg" alt=""></router-link>
+      </div>
+      <div>
+        <router-link to="/omdb"><img src="./assets/Search.svg" alt=""></router-link>
+      </div>
+      <div>
+        <router-link to="/favourites"><img src="./assets/HeartBold.svg" alt=""></router-link>
+      </div>
     </div>
     <router-view />
   </div>
@@ -38,15 +44,24 @@ export default {
 
 #nav {
   padding: 30px 5px;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  border-top: lightgray solid 2px;
+
+  div {
+    width: 33.333%;
+  }
 
   a {
-    font-weight: bold;
-    color: #2c3e50;
-    text-decoration: none;
 
-    &.router-link-exact-active {
-      color: #42b983;
-      text-decoration: underline;
+    &.router-link-exact-active > *{
+      transform: scale(1.8);
     }
   }
 }
