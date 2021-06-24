@@ -20,27 +20,34 @@
     </div>
 
     <hr />
-    <div v-if="fetched.Response" class="wrapperRes">
+    <img class="spinnerGif" src="../assets/spinner/lupa.gif" v-if="loading" />
+
+    <div v-if="fetched.Response && !loading" class="wrapperRes">
       <div
         v-for="item in fetched.Search"
         :key="item.imdbID"
         @click="movieDetail(item.imdbID)"
         class="movieCard"
       >
-        <h4>{{ item.Title }}</h4>
-        <img
-          :src="item.Poster"
-          :alt="item.Title + ' - Movie Poster'"
-          v-if="item.Poster"
-        />
-        <p v-if="item.Year">
-          <strong> Year: </strong>
-          <small> {{ item.Year }} </small>
-        </p>
+        <div v-if="item.Poster !== 'N/A'">
+          <h4>{{ item.Title }}</h4>
+          <img
+            :src="item.Poster"
+            :alt="item.Title + ' - Movie Poster'"
+            v-if="item.Poster"
+          />
+          <p v-if="item.Year">
+            <strong> Year: </strong>
+            <small> {{ item.Year }} </small>
+          </p>
+        </div>
       </div>
     </div>
 
-    <div v-if="fetched.Error === 'Movie not found!'" class="wrapperRes">
+    <div
+      v-if="fetched.Error === 'Movie not found!' && !loading"
+      class="wrapperRes"
+    >
       🥺 No results found for your search. Check your spelling for errors 🔍
     </div>
   </div>
@@ -59,6 +66,7 @@ export default {
       movie: "",
       format: "",
       fetched: {},
+      loading: false,
     };
   },
 
@@ -72,15 +80,19 @@ export default {
   },
 
   methods: {
-    async searchMovie() {
+    searchMovie() {
       try {
-        const call = await fetch(
-          `http://www.omdbapi.com/?s=${this.movie}&type=${this.format}&page=1&apikey=d9e992da`
-        );
-        const parsed = await call.json();
-        this.fetched = parsed;
-        this.movie = "";
-        this.format = "";
+        this.loading = true;
+        setTimeout(async () => {
+          const call = await fetch(
+            `http://www.omdbapi.com/?s=${this.movie}&type=${this.format}&page=1&apikey=d9e992da`
+          );
+          const parsed = await call.json();
+          this.fetched = parsed;
+          this.movie = "";
+          this.format = "";
+          this.loading = false;
+        }, 2000);
       } catch (err) {
         console.log(err);
         this.movie = "";
@@ -98,7 +110,7 @@ export default {
 
 <style lang='scss' scoped>
 div.omdb {
-  padding: 30px 0 0 0;
+  padding: 30px 0 100px 0;
   display: flex;
   flex-direction: column;
   align-items: center;

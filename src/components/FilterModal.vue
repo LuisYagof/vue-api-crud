@@ -6,12 +6,16 @@
     </div>
     <div class="filtersBox">
       <div>
-        <select v-model="format">
+        
+        <label for="formatID">Format</label>
+        <select v-model="format" id="formatID">
           <option value="">BOTH</option>
           <option value="movie">Movies</option>
           <option value="series">TV Shows</option>
         </select>
-        <select v-model="genre">
+
+        <label for="genreID">Genre</label>
+        <select v-model="genre" id="genreID">
           <option value="">ANY</option>
           <option value="Action">Action</option>
           <option value="Crime">Crime</option>
@@ -104,6 +108,10 @@ div.filterModal {
       display: flex;
       flex-direction: column;
       align-items: start;
+
+      label {
+        margin-bottom: 5px;
+      }
 
       select {
         padding: 3px 3px;

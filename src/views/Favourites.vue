@@ -102,7 +102,7 @@ export default {
 
 <style lang='scss' scoped>
 div.Favourites {
-  padding: 30px 0 0 0;
+  padding: 30px 0 100px 0;
   display: flex;
   flex-direction: column;
   align-items: center;

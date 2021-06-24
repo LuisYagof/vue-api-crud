@@ -283,6 +283,229 @@
       "totalSeasons": "6",
       "Response": "True",
       "id": "tt2575988"
+    },
+    {
+      "Title": "Alice in the Cities",
+      "Year": "1974",
+      "Rated": "Not Rated",
+      "Released": "17 May 1974",
+      "Runtime": "113 min",
+      "Genre": "Drama",
+      "Director": "Wim Wenders",
+      "Writer": "Wim Wenders, Veith von Fürstenberg (contributing writer)",
+      "Actors": "Rüdiger Vogler, Yella Rottländer, Lisa Kreuzer, Edda Köchl",
+      "Plot": "A German journalist is saddled with a nine-year-old girl after encountering her mother at a New York airport.",
+      "Language": "German, English, Dutch",
+      "Country": "West Germany",
+      "Awards": "1 win & 1 nomination.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYTcyMjZjNTItYTQ1Zi00ZTEzLWJmZjUtZjY5M2ZhMGFmNzQ0XkEyXkFqcGdeQXVyMjI4MjA5MzA@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.0/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "100%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "78/100"
+        }
+      ],
+      "Metascore": "78",
+      "imdbRating": "8.0",
+      "imdbVotes": "10,499",
+      "imdbID": "tt0069687",
+      "Type": "movie",
+      "DVD": "N/A",
+      "BoxOffice": "N/A",
+      "Production": "Westdeutscher Rundfunk, Filmverlag der Autoren",
+      "Website": "N/A",
+      "Response": "True",
+      "id": "tt0069687"
+    },
+    {
+      "Title": "Arrebato",
+      "Year": "1979",
+      "Rated": "N/A",
+      "Released": "26 Aug 1983",
+      "Runtime": "105 min",
+      "Genre": "Drama, Fantasy, Horror",
+      "Director": "Iván Zulueta",
+      "Writer": "Iván Zulueta",
+      "Actors": "Eusebio Poncela, Cecilia Roth, Will More",
+      "Plot": "A low budget horror filmmaker gets in touch with an eccentric who is trying to film his consciousness during drug abuse.",
+      "Language": "Spanish",
+      "Country": "Spain",
+      "Awards": "3 wins & 3 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYTQwMzEyNGQtOWZlNy00MDFkLWI5MWQtZWM2ZWZjN2Y1MzgyXkEyXkFqcGdeQXVyMjc4MjcxNzI@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.0/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "86%"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "7.0",
+      "imdbVotes": "2,222",
+      "imdbID": "tt0078797",
+      "Type": "movie",
+      "DVD": "N/A",
+      "BoxOffice": "N/A",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": "tt0078797"
+    },
+    {
+      "Title": "Pizza, birra, faso",
+      "Year": "1998",
+      "Rated": "R",
+      "Released": "15 Jan 1998",
+      "Runtime": "92 min",
+      "Genre": "Crime, Drama",
+      "Director": "Israel Adrián Caetano, Bruno Stagnaro",
+      "Writer": "Israel Adrián Caetano, Bruno Stagnaro",
+      "Actors": "Héctor Anglada, Jorge Sesán, Pamela Jordán",
+      "Plot": "A couple of friends work for a taxi driver to rob his passengers, but they feel like they are being ripped off.",
+      "Language": "Spanish",
+      "Country": "Argentina",
+      "Awards": "12 wins & 5 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BY2E3YTVkYzUtNTljOC00NDg2LTlkNmQtYzJkMjAyOGFjMzI1XkEyXkFqcGdeQXVyMzU1ODUxOTk@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.1/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "51%"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "7.1",
+      "imdbVotes": "2,419",
+      "imdbID": "tt0145393",
+      "Type": "movie",
+      "DVD": "15 Mar 2018",
+      "BoxOffice": "N/A",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": "tt0145393"
+    },
+    {
+      "Title": "Halt and Catch Fire",
+      "Year": "2014–2017",
+      "Rated": "TV-14",
+      "Released": "01 Jun 2014",
+      "Runtime": "60 min",
+      "Genre": "Drama",
+      "Director": "N/A",
+      "Writer": "Christopher Cantwell, Christopher C. Rogers",
+      "Actors": "Lee Pace, Scoot McNairy, Mackenzie Davis",
+      "Plot": "Follows some players in the 80s technological revolution that lead to information society.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "Nominated for 1 Primetime Emmy. 2 wins & 11 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTczNjAyMDg1Nl5BMl5BanBnXkFtZTgwMDQyNTA2OTE@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.4/10"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "8.4",
+      "imdbVotes": "29,321",
+      "imdbID": "tt2543312",
+      "Type": "series",
+      "totalSeasons": "4",
+      "Response": "True",
+      "id": "tt2543312"
+    },
+    {
+      "Title": "All About Eve",
+      "Year": "1950",
+      "Rated": "Passed",
+      "Released": "27 Oct 1950",
+      "Runtime": "138 min",
+      "Genre": "Drama",
+      "Director": "Joseph L. Mankiewicz",
+      "Writer": "Joseph L. Mankiewicz (written for the screen by)",
+      "Actors": "Bette Davis, Anne Baxter, George Sanders, Celeste Holm",
+      "Plot": "A seemingly timid but secretly ruthless ingénue insinuates herself into the lives of an aging Broadway star and her circle of theater friends.",
+      "Language": "English, French",
+      "Country": "USA",
+      "Awards": "Won 6 Oscars. Another 20 wins & 18 nominations.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTY2MTAzODI5NV5BMl5BanBnXkFtZTgwMjM4NzQ0MjE@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.2/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "99%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "98/100"
+        }
+      ],
+      "Metascore": "98",
+      "imdbRating": "8.2",
+      "imdbVotes": "123,066",
+      "imdbID": "tt0042192",
+      "Type": "movie",
+      "DVD": "25 Nov 2015",
+      "BoxOffice": "$63,463",
+      "Production": "Twentieth Century Fox",
+      "Website": "N/A",
+      "Response": "True",
+      "id": "tt0042192"
+    },
+    {
+      "Title": "Stroszek",
+      "Year": "1977",
+      "Rated": "Not Rated",
+      "Released": "12 Jul 1977",
+      "Runtime": "115 min",
+      "Genre": "Comedy, Drama",
+      "Director": "Werner Herzog",
+      "Writer": "Werner Herzog",
+      "Actors": "Bruno S., Eva Mattes, Clemens Scheitz",
+      "Plot": "In Berlin, an alcoholic man, recently released from prison, joins his elderly friend and a prostitute in a determined dream to leave Germany and seek a better life in Wisconsin.",
+      "Language": "German, English, Turkish",
+      "Country": "West Germany",
+      "Awards": "2 wins & 2 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTEyMjAwNjcyMTheQTJeQWpwZ15BbWU4MDI2OTgwOTIx._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "95%"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "7.9",
+      "imdbVotes": "13,412",
+      "imdbID": "tt0075276",
+      "Type": "movie",
+      "DVD": "13 Feb 2017",
+      "BoxOffice": "N/A",
+      "Production": "Werner Herzog Filmproduktion, Zweites Deutsches Fernsehen",
+      "Website": "N/A",
+      "Response": "True",
+      "id": "tt0075276"
     }
   ]
 }

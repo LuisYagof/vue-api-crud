@@ -1,5 +1,7 @@
 <template>
   <div class="movieDetail">
+    <img class="spinnerGif" src="../assets/spinner/loader.gif" v-if="loading" />
+
     <h2>{{ fetched.Title }}</h2>
 
     <img
@@ -28,10 +30,18 @@
       <small> {{ fetched.Genre }} </small>
     </p>
 
-    <button v-if="checkFav" @click="favDeleteAction(fetched.imdbID)">
+    <button
+      v-if="checkFav && !loading"
+      @click="favDeleteAction(fetched.imdbID)"
+    >
       Borrar
     </button>
-    <button v-else @click="saveFav(fetched, fetched.imdbID)">Guardar</button>
+    <button
+      v-if="!checkFav && !loading"
+      @click="saveFav(fetched, fetched.imdbID)"
+    >
+      Guardar
+    </button>
   </div>
 </template>
 
@@ -48,6 +58,7 @@ export default {
   data() {
     return {
       fetched: {},
+      loading: true,
     };
   },
 
@@ -69,16 +80,20 @@ export default {
   methods: {
     ...mapActions(["favsLoadAction", "favDeleteAction"]),
 
-    async movieFetch() {
-      try {
-        const movieCall = await fetch(
-          `http://www.omdbapi.com/?i=${this.$route.params.id}&apikey=d9e992da`
-        );
-        const parsedMovie = await movieCall.json();
-        this.fetched = parsedMovie;
-      } catch (err) {
-        console.log(err);
-      }
+    movieFetch() {
+      setTimeout(async () => {
+        try {
+          const movieCall = await fetch(
+            `http://www.omdbapi.com/?i=${this.$route.params.id}&apikey=d9e992da`
+          );
+          const parsedMovie = await movieCall.json();
+          this.fetched = parsedMovie;
+          this.loading = false;
+        } catch (err) {
+          console.log(err);
+          this.loading = false;
+        }
+      }, 1000);
     },
     async saveFav(fetched, id) {
       const fetchOpt = {
@@ -96,7 +111,7 @@ export default {
       } catch (err) {
         console.log(err);
       }
-    }
+    },
   },
 };
 </script>

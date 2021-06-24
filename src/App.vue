@@ -3,13 +3,17 @@
     <Header />
     <div id="nav">
       <div>
-        <router-link to="/"><img src="./assets/Home.svg" alt=""></router-link>
+        <router-link to="/"><img src="./assets/Home.svg" alt="" /></router-link>
       </div>
       <div>
-        <router-link to="/omdb"><img src="./assets/Search.svg" alt=""></router-link>
+        <router-link to="/omdb"
+          ><img src="./assets/Search.svg" alt=""
+        /></router-link>
       </div>
       <div>
-        <router-link to="/favourites"><img src="./assets/HeartBold.svg" alt=""></router-link>
+        <router-link to="/favourites"
+          ><img src="./assets/Heart.svg" alt=""
+        /></router-link>
       </div>
     </div>
     <router-view />
@@ -59,8 +63,7 @@ export default {
   }
 
   a {
-
-    &.router-link-exact-active > *{
+    &.router-link-exact-active > * {
       transform: scale(1.8);
     }
   }
@@ -70,5 +73,9 @@ hr {
   border: 1px solid lightgray;
   width: 90%;
   margin: 22px 0;
+}
+
+img.spinnerGif {
+  width: 50px;
 }
 </style>
