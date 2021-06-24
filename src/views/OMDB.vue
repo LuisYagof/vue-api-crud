@@ -10,10 +10,10 @@
         <option value="series">Series</option>
       </select>
       <button
-        :disabled="disableBtn"
+        :disabled="isDisabled"
         @click="searchMovie"
         type="button"
-        :class="disableClass"
+        :class="isDisabled ? 'btn-disabled' : 'btn-enabled'"
       >
         Search
       </button>
@@ -71,12 +71,9 @@ export default {
   },
 
   computed: {
-    disableBtn() {
-      return this.movie === "" || this.format === "" ? true : false;
-    },
-    disableClass() {
-      return this.movie === "" || this.format === "" ? "true" : "false";
-    },
+    isDisabled() {
+      return this.movie === "" || this.format === "" || this.loading ? true : false;
+    }
   },
 
   methods: {
@@ -156,7 +153,7 @@ div.omdb {
       outline: none;
     }
 
-    button.true {
+    button.btn-disabled {
       background-color: grey;
     }
   }
