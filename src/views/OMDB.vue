@@ -4,25 +4,31 @@
 
     <div class="form">
       <input v-model="movie" type="text" placeholder="Movie or TV show name" />
-      <select v-model="format" name="format" defaultValue="">
-        <option value="" disabled hidden>Movie or TV show?</option>
-        <option value="movie">Movie</option>
-        <option value="series">Series</option>
+      <select
+        v-model="format"
+        name="format"
+        defaultValue=""
+        role="format-select"
+      >
+        <option value="" disabled hidden >Movie or TV show?</option>
+        <option value="movie" >Movie</option>
+        <option value="series" >Series</option>
       </select>
       <button
         :disabled="isDisabled"
         @click="searchMovie"
         type="button"
         :class="isDisabled ? 'btn-disabled' : 'btn-enabled'"
+        role="searchBtn"
       >
         Search
       </button>
     </div>
 
     <hr />
-    <img class="spinnerGif" src="../assets/spinner/lupa.gif" v-if="loading" />
+    <img class="spinnerGif" src="../assets/spinner/lupa.gif" v-if="loading" role="lupaSpinner" />
 
-    <div v-if="fetched.Response && !loading" class="wrapperRes">
+    <div v-if="fetched.Response && !loading" class="wrapperRes" role="responseWrapper">
       <div
         v-for="item in fetched.Search"
         :key="item.imdbID"
@@ -72,8 +78,10 @@ export default {
 
   computed: {
     isDisabled() {
-      return this.movie === "" || this.format === "" || this.loading ? true : false;
-    }
+      return this.movie === "" || this.format === "" || this.loading
+        ? true
+        : false;
+    },
   },
 
   methods: {
@@ -133,13 +141,6 @@ div.omdb {
       outline: none;
     }
 
-    select {
-      padding: 3px 3px;
-      margin-bottom: 10px;
-      font: inherit;
-      line-height: 1.5;
-    }
-
     button {
       background-color: #42b983;
       color: whitesmoke;
@@ -159,7 +160,8 @@ div.omdb {
   }
 
   div.movieCard {
-    padding: 0 20px;
+    padding:  20px;
+
 
     h4 {
       margin-bottom: 22px;

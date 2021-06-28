@@ -1,7 +1,7 @@
 
 <template>
   <div class="home">
-    <Title msg="Welcome to Moviepedia" />
+    <Title msg="Welcome to MoviePedia" />
     <hr />
     <p>In this webapp you can:</p>
     <h2>🔍 <router-link to="/omdb"> Search</router-link> for any existing movie or TV show</h2>

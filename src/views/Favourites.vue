@@ -5,7 +5,9 @@
       :flag="modalFlag"
       @filterProp="applyFilters"
     />
-    <div class="Favourites">
+    <div class="Favourites" v-if="!modalFlag">
+      <h2>Favorite movies & TV shows</h2>
+      <hr>
       <div class="filterBox">
         <p>Filters</p>
         <img
@@ -81,16 +83,28 @@ export default {
       this.modalFlag = !this.modalFlag;
     },
 
-    applyFilters(format, genre) {
+    applyFilters(format, genre, score) {
       if (format === "" && genre === "") {
-        return;
+        this.filtered = this.favs.filter(
+          (e) => Number(e.Ratings[0].Value.slice(0, -3)) > score
+        );
       } else if (format === "" && genre !== "") {
-        this.filtered = this.favs.filter((e) => e.Genre.includes(genre));
+        this.filtered = this.favs.filter(
+          (e) =>
+            e.Genre.includes(genre) &&
+            Number(e.Ratings[0].Value.slice(0, -3)) > score
+        );
       } else if (format !== "" && genre === "") {
-        this.filtered = this.favs.filter((e) => e.Type == format);
+        this.filtered = this.favs.filter(
+          (e) =>
+            e.Type == format && Number(e.Ratings[0].Value.slice(0, -3)) > score
+        );
       } else {
         this.filtered = this.favs.filter(
-          (e) => e.Type == format && e.Genre.includes(genre)
+          (e) =>
+            e.Type == format &&
+            e.Genre.includes(genre) &&
+            Number(e.Ratings[0].Value.slice(0, -3)) > score
         );
       }
     },

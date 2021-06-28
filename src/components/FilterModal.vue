@@ -6,16 +6,15 @@
     </div>
     <div class="filtersBox">
       <div>
-        
         <label for="formatID">Format</label>
-        <select v-model="format" id="formatID">
+        <select v-model="format" name="format" id="formatID">
           <option value="">BOTH</option>
           <option value="movie">Movies</option>
           <option value="series">TV Shows</option>
         </select>
 
         <label for="genreID">Genre</label>
-        <select v-model="genre" id="genreID">
+        <select v-model="genre" name="genre" id="genreID">
           <option value="">ANY</option>
           <option value="Action">Action</option>
           <option value="Crime">Crime</option>
@@ -25,6 +24,15 @@
           <option value="Sci-Fi">Sci-Fi</option>
           <option value="Comedy">Comedy</option>
           <option value="Documentary">Documentary</option>
+        </select>
+
+        <label for="ratingID">IMDB rating</label>
+        <select v-model.number="rating" name="rating" id="ratingID">
+          <option value="0">ANY</option>
+          <option value="9">9/10 at least</option>
+          <option value="8.5">8.5/10 at least</option>
+          <option value="8">8/10 at least</option>
+          <option value="7.5">7.5/10 at least</option>
         </select>
       </div>
       <div class="btnBox">
@@ -43,7 +51,8 @@ export default {
   data() {
     return {
       format: "",
-      genre: ""
+      genre: "",
+      rating: 0,
     };
   },
   props: {
@@ -57,7 +66,7 @@ export default {
   computed: {},
   methods: {
     applyFilters() {
-      this.$emit("filterProp", this.format, this.genre);
+      this.$emit("filterProp", this.format, this.genre, this.rating);
       this.format = "";
       this.genre = "";
       this.$emit("close");
@@ -79,7 +88,7 @@ div.filterModal {
   color: #fff;
   top: 100px;
   left: -100%;
-  transition: left 1s;
+  transition: left 0.7s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -114,11 +123,8 @@ div.filterModal {
       }
 
       select {
-        padding: 3px 3px;
         margin-bottom: 20px;
-        font: inherit;
-        line-height: 1.5;
-        width: 120px;
+        width: 150px;
       }
     }
 

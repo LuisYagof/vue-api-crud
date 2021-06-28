@@ -78,4 +78,13 @@ hr {
 img.spinnerGif {
   width: 50px;
 }
+
+select {
+  padding: 3px 3px;
+  margin-bottom: 10px;
+  font: inherit;
+  line-height: 1.5;
+  border-radius: 0;
+  border: solid 1px lightgray;
+}
 </style>
