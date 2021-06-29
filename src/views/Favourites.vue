@@ -1,10 +1,10 @@
 <template>
   <div>
-    <FilterModal
+    <!-- <FilterModal
       @close="handleFilters"
       :flag="modalFlag"
       @filterProp="applyFilters"
-    />
+    /> -->
     <div class="Favourites" v-if="!modalFlag">
       <h2>Favorite movies & TV shows</h2>
       <hr>
@@ -24,6 +24,7 @@
           v-for="item in favs"
           :key="item.imdbID"
           @click="movieDetail(item.imdbID)"
+          :role="item.imdbID"
         >
           {{ item.Title }}
         </h3>
