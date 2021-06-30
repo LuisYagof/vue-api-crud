@@ -10,9 +10,9 @@
         defaultValue=""
         role="format-select"
       >
-        <option value="" disabled hidden >Movie or TV show?</option>
-        <option value="movie" >Movie</option>
-        <option value="series" >Series</option>
+        <option value="" disabled hidden>Movie or TV show?</option>
+        <option value="movie">Movie</option>
+        <option value="series">Series</option>
       </select>
       <button
         :disabled="isDisabled"
@@ -26,9 +26,18 @@
     </div>
 
     <hr />
-    <img class="spinnerGif" src="../assets/spinner/lupa.gif" v-if="loading" role="lupaSpinner" />
+    <img
+      class="spinnerGif"
+      src="../assets/spinner/lupa.gif"
+      v-if="loading"
+      role="lupaSpinner"
+    />
 
-    <div v-if="fetched.Response && !loading" class="wrapperRes" role="responseWrapper">
+    <div
+      v-if="fetched.Response && !loading"
+      class="wrapperRes"
+      role="responseWrapper"
+    >
       <div
         v-for="item in fetched.Search"
         :key="item.imdbID"
@@ -62,6 +71,7 @@
 // ----------------------------------------------------------------------------------
 
 <script>
+import getMovies from "../hooks/GetMovies";
 export default {
   name: "Omdb",
 
@@ -86,23 +96,14 @@ export default {
 
   methods: {
     searchMovie() {
-      try {
-        this.loading = true;
-        setTimeout(async () => {
-          const call = await fetch(
-            `http://www.omdbapi.com/?s=${this.movie}&type=${this.format}&page=1&apikey=d9e992da`
-          );
-          const parsed = await call.json();
-          this.fetched = parsed;
-          this.movie = "";
-          this.format = "";
-          this.loading = false;
-        }, 2000);
-      } catch (err) {
-        console.log(err);
+      this.loading = true;
+      setTimeout(async () => {
+        const call = await getMovies(this.movie, this.format);
+        this.fetched = call;
         this.movie = "";
         this.format = "";
-      }
+        this.loading = false;
+      }, 2000);
     },
     movieDetail(id) {
       this.$router.push(`/movie/${id}`);
@@ -160,8 +161,7 @@ div.omdb {
   }
 
   div.movieCard {
-    padding:  20px;
-
+    padding: 20px;
 
     h4 {
       margin-bottom: 22px;

@@ -1,5 +1,4 @@
 export default async function getFavs() {
-  console.log("dentro mock");
   return [
     {
       Title: "Blade Runner",
